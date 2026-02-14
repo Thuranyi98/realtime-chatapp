@@ -13,6 +13,12 @@ Full-stack technical assessment project with a Node.js backend and Next.js front
 - `backend/` Express API, Prisma schema, Socket.IO server, Swagger files
 - `frontend/` Next.js UI, API client layer, socket integration, component tests
 
+## Demo
+
+| | |
+|:-------------------------:|:-------------------------:|
+| ![Screenshot 1](https://res.cloudinary.com/dbqyaigcg/image/upload/v1771041515/Screenshot_2026-02-14_at_10.16.15_AM_ytrn9j.png) | ![Screenshot 2](https://res.cloudinary.com/dbqyaigcg/image/upload/v1771041501/Screenshot_2026-02-14_at_10.16.41_AM_yncz3a.png) |
+
 ## Backend
 
 ### Features
