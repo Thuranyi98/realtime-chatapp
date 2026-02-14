@@ -69,14 +69,6 @@ npm run dev
 - Notifications (dropdown + browser notifications + toast)
 - Conversation theme switcher per user/role
 
-### Frontend Architecture Notes
-
-- API calls split under `frontend/api/`
-- Environment base URLs centralized in `frontend/lib/config/env.ts`
-- SVG icons split under `frontend/assets/icons/`
-- Conversation themes moved to `frontend/lib/themes/conversationThemes.ts`
-- Main page logic extracted to `frontend/lib/hooks/useChatPage.ts`
-
 ### Environment (Frontend)
 
 Use `NEXT_PUBLIC_APP_ENV` to switch environments:
@@ -166,7 +158,3 @@ Reset database volume:
 docker compose down -v
 ```
 
-## Notes
-
-- Backend currently has an existing TypeScript typing issue around JWT signing configuration in `backend/src/utils/jwt.ts` that can affect `npm run build`.
-- Frontend forms currently use a reusable local hook (`frontend/lib/hooks/useForm.ts`) to keep the project runnable in restricted-network environments.
