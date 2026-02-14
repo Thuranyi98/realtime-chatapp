@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const userController_1 = require("../controllers/userController");
+const adminController_1 = require("../controllers/adminController");
+const protect_1 = require("../middlewares/protect");
+const isAdmin_1 = require("../middlewares/isAdmin");
+const router = (0, express_1.Router)();
+router.get("/", protect_1.protect, isAdmin_1.isAdmin, userController_1.getUsers);
+router.get("/admins", protect_1.protect, adminController_1.getAdmins);
+exports.default = router;
